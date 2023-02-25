@@ -77,7 +77,7 @@ public class StudentRepository {
         }
         return null;
     }
-    public List<String> getStudentsByTeacherName(String teacherName){
+    public List<String> getStudentByTeacherName(String teacherName){
         List<String> studentsList = new ArrayList<>();
         if(teacherStudentMap.containsKey(teacherName)){
             return teacherStudentMap.get(teacherName);
